@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(32,34,47);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.header{
+    width: 80%;
+    height: 60px;
+    margin: 30px auto;
+    display: flex;
+}
+.header_left, .header_right{
+    width: 50%;
+    height: 100%;
+}
+.header_left h1{
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+.header_left p, .header_right p{
+    font-size: 11px;
+    color: #ffffff88;
+    line-height: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.btn{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0.1%, rgb(0, 255, 179) 100%);
+    width: 33px;
+    height: 15px;
+    border-radius: 20px;
+    padding-left: 2.5px;
+    padding-top: 1.5px;
+}
+.btn-inside{
+    background-color: black;
+    width: 13px;
+    height: 13px;
+    margin-left: 3px;
+    border-radius: 50%;
+    /* padding-left: 2px; */
+}
+.header_right{
+    display: flex;
+    /* text-align: right; */
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    width: 220px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: rgb(37,43,67);
+    border-radius: 5px;
+    border-top: 3px solid rgb(34,139,231);
+  
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin:20px 70px;
+    /* text-align: center; */
+    
+}
+.icons p, .bottom-box-one p{
+    font-size: 11px;
+    color: #ffffff88;
+    font-weight: bold;
+    padding-left: 7px;
+    padding-right: 7px;
+
+
+}
+.icons i, .bottom-box-one i{
+    background-color: blue;
+    width: 13px;
+    height: 17px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+.box .p1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+.box .p2{
+    font-size: 10px;
+    color: gray;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+.box .p3{
+    color: green;
+    font-size: 9px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+.icons .twitter, .bottom-box .twitter{
+    background-color: inherit;
+    color: rgb(34,160,243);
+    font-size: 18px;
+}
+.icons .slack, .bottom-box .slack{
+    color: red;
+    background-color: inherit;
+    font-size: 20px;
+}
+.icons .linkdin, .bottom-box .linkdin{
+    background-color: red;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 3px;
+}
+.box  .p3_red, .bottom-box-two .p3_red{
+    color: red;
+    font-size: 10px;
+}
+.box-3{
+    border-top: 3px solid rgb(229,147,130);
+    /* background: linear-gradient(to top, red, red), 5%; */
+}
+.box-4{
+    border-top: 3px solid rgb(185,46,42);
+}
+.heading-2{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+.bottom-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-box{
+    width: 220px;
+    height: 130px;
+    border-radius: 5px;
+    background-color: rgb(37,43,67);
+    margin-top: 20px;
+}
+.bottom-box-one{
+    display: flex;
+    align-items: center;
+    /* margin: 30px 60px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.bottom-box-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.bottom-box-two .bottom-p-1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+.bottom-box-two .bottom-p-2{
+    color: green;
+    font-weight: bolder;
+    font-size: 13px;
+}
